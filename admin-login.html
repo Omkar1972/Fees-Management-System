@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container card">
+    <h1>Admin Login</h1>
+    <p class="muted">Enter admin credentials</p>
+
+    <form id="adminLoginForm">
+      <label>Email</label>
+      <input type="email" id="email" required />
+
+      <label>Password</label>
+      <input type="password" id="password" required />
+
+      <button type="submit">Login</button>
+
+      <div id="msg"></div>
+    </form>
+  </div>
+
+  <script src="admin-login.js"></script>
+</body>
+</html>

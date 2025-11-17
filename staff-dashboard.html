@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Staff Dashboard</title>
+</head>
+
+<body>
+
+<script>
+  if (!localStorage.getItem("staffLogin")) {
+    window.location.href = "staff-login.html";
+  }
+</script>
+
+<h1>Welcome Staff</h1>
+<p>This is staff protected dashboard.</p>
+
+<button onclick="logout()">Logout</button>
+
+<script>
+  function logout() {
+    localStorage.removeItem("staffLogin");
+    window.location.href = "Main page.html";
+  }
+</script>
+
+</body>
+</html>

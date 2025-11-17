@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+</head>
+
+<body>
+
+<script>
+  // If not logged in → redirect to login
+  if (!localStorage.getItem("adminLogin")) {
+    window.location.href = "admin-login.html";
+  }
+</script>
+
+<h1>Welcome Admin</h1>
+<p>This is Admin protected dashboard.</p>
+
+<button onclick="logout()">Logout</button>
+
+<script>
+  function logout() {
+    localStorage.removeItem("adminLogin");
+    window.location.href = "Main page.html";
+  }
+</script>
+
+</body>
+</html>
