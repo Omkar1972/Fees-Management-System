@@ -1,4 +1,4 @@
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbziyK9JVnLXn4ikZuj4GcEbRYGaItWdCM_KpotcN5xTYk3yk1Ff9TLLasE1eE07VR9a/exec";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwRW5sWjtWOvg63VsHAOhObVSQrZqfqrPdFXnIKHqlpweN9Afq6bcilfwX8NYpzfSow/exec";
 
 function showMsg(text, type) {
   document.getElementById("msg").innerHTML =
